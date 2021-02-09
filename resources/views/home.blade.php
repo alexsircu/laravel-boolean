@@ -11,7 +11,9 @@
 
     </head>
     <body>
-      <h1>CIAO</h1>
+      @foreach ($cars as $car)
+          <p>Marca:{{ $car["marca"] }} - Modello:{{ $car["modello"] }} - Targa:{{ $car["targa"] }}</p>
+      @endforeach
 
     </body>
 </html>
